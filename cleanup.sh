@@ -9,7 +9,7 @@ if [ "$(docker ps -aq -f name=$CONTAINER_NAME)" ]; then
     docker stop $CONTAINER_NAME
     # docker rm $CONTAINER_NAME
 else
-    echo "A container with the name $CONTAINER_NAME does not exist. Skipping container deletion."
+    echo "A container with the name $CONTAINER_NAME does not exist. Skipping db container deletion."
 fi
 
 
